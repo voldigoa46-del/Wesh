@@ -5,11 +5,11 @@ import DefaultImg from '../assets/Default.jpg'
 const Default = () => {
   return (
     <div className='main'>
-        <h2>Hello there, <br />
-It's time to show another project of mine related to Valentine <br />
-and that was created for my Valentine.</h2>
-    <img src={DefaultImg} alt="Default Img" srcset={DefaultImg} />
-    <h2>Tap <Link to={'/Home'}> Home Page </Link> navigation to be welcomed.</h2>
+        <h2>Bonjour, <br />
+Il est temps de présenter un autre de mes projets dédié spécialement a ma grande sœur <br />
+et qui a été créé pour ma grande sœur Dorothée.</h2>
+    <img src={DefaultImg} alt="Image par défaut" srcSet={DefaultImg} />
+    <h2>Appuyez sur la navigation <Link to={'/Home'}> Page d'accueil </Link> pour être accueilli.</h2>
     </div>
   )
 }
