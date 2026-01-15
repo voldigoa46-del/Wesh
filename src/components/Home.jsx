@@ -5,9 +5,9 @@ import HomeImg from '../assets/Home.jpg'
 const Home = () => {
   return (
     <div className='home'>
-        <h2>Welcome to my website</h2>
-        <img src={HomeImg} alt="Home Image" srcSet={HomeImg} />
-        <h2>Here is the webpage. You should visit to <Link to={'/Gallery'}>Gallery Page </Link>.</h2>
+        <h2>Bienvenue sur mon site web dédié a ma grande sœur</h2>
+        <img src={HomeImg} alt="Image d'accueil" srcSet={HomeImg} />
+        <h2>Voici la page web. Vous devriez visiter la <Link to={'/Gallery'}>Page Galerie</Link>.</h2>
     </div>
   )
 }
