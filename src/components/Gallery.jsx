@@ -12,16 +12,16 @@ const Gallery = () => {
   ])
   return (
     <div className='gallery'>
-        <h2>Here are some images that I have saved to my gallery.</h2>
-        <h2>This girl has stolen my heart from myself. If any righteous person found this girl in your local area, please inform me. I will bring her with myself forever. 🙃😫</h2>
+        <h2>Voici quelques images que j'ai enregistrées dans ma galerie.</h2>
+        <h2>Cette fille a volé mon cœur. Si une personne honnête trouve cette fille dans les parages, s'il vous plaît, informez-moi. Je l'emmènerai avec moi pour toujours. 🙃😫</h2>
         <div className='img-container'>
         {image.map((e, index)=>(
-          <div className='images'>
-            <img key={index} src={e.location} alt="" srcset={e.location} />
+          <div className='images' key={index}>
+            <img src={e.location} alt={`Gallery ${index}`} srcSet={e.location} />
             </div>
           ))}
           </div>
-        <h2>You should visit <Link to={'/Letter'}>Letter Page</Link> to get something there.</h2>
+        <h2>Tu devrais visiter la <Link to={'/Letter'}>Page de la Lettre</Link> pour y découvrir quelque chose.</h2>
     </div>
   )
 }
